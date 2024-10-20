@@ -35,7 +35,6 @@ def buildGraph(M):
             total += abs(M[j][i])
        if total != 2:
            return "not an incidence matrix!"
-    
     # adds the edges
     G = nx.Graph()
     for edge in M:
