@@ -108,13 +108,16 @@ print(tabulate(matrix_product(N,M)))
 # Write a function that transposes a matrix
   
 def matrix_transpose(A):
-  M = [[0]*len(A[0])]*len(A)
+  M = []
   print(M)
-  for r in range(len(A)):
-    for c in range(len(A[0])):
-      M[c][r] = A[r][c]
+  for c in range(len(A[0])):
+    Mrow =[]
+    for r in range(len(A)):
+      Mrow.append(A[r][c])
+    M.append(Mrow)
   return M
 
 print(tabulate(matrix_transpose(N)))
+print(tabulate(matrix_transpose(M)))
 
   
