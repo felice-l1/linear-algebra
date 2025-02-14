@@ -50,5 +50,6 @@ print("\n")
 
 # Find the QR factorization of a matrix!
 print ("The QR factorization of B is \n:")
+print(np.linalg.qr(B))
 for item in np.linalg.qr(B):
   print(item)

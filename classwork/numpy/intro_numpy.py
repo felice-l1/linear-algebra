@@ -58,12 +58,12 @@ import csv
 
 # Importing a matrix from a file using the csv package
 # This creates a list object. Each line in the file is interpreted as a comma-separted list
-with open("matrix.txt") as f:
-  reader = csv.reader(f)
-  d = list(reader)
+# with open("matrix.txt") as f:
+#   reader = csv.reader(f)
+#   d = list(reader)
 
 # This converts the list of lists of strings into a numpy array
-M = np.array(d)
+M = np.array([[3,5,-1],[0,2,8],[1,1,2],[0,1,12]])
 print("\nThe matrix imported from matrix.txt:\n",M)
 
 # The elements of the numpy array are still strings. This converts all the elements to type int
